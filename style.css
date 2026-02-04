@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #e0c3fc);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #ff4d88;
+}
+
+button {
+  background: #ff4d88;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.reasons {
+  list-style: none;
+  padding: 0;
+}
+
+.buttons {
+  position: relative;
+  height: 90px;
+}
+
+#noBtn {
+  position: absolute;
+}
+
+.floating-hearts span {
+  position: absolute;
+  font-size: 22px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-10vh); }
+}
